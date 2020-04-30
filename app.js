@@ -84,7 +84,7 @@ app.get("/users/info", [
             {
                 "$project": {
                     "level": {
-                        "$round": {
+                        "$floor": {
                             "$divide": [ "$exp", 200 ]
                         }
                     },
